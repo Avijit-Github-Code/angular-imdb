@@ -1,0 +1,17 @@
+import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
+
+@Component({
+  selector: 'app-movie-details',
+  templateUrl: './movie-details.component.html',
+  styleUrls: ['./movie-details.component.css']
+})
+export class MovieDetailsComponent implements OnInit {
+  movie;
+  constructor(
+  private apiService : ApiService) {}
+
+  ngOnInit() {
+    this.movie = this.apiService.getMovie();
+  }
+}
