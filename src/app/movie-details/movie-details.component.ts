@@ -7,11 +7,10 @@ import { ApiService } from '../api.service';
   styleUrls: ['./movie-details.component.css']
 })
 export class MovieDetailsComponent implements OnInit {
-  movie;
+  
   constructor(
   private apiService : ApiService) {}
 
   ngOnInit() {
-    this.movie = this.apiService.getMovie();
   }
 }

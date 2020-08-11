@@ -30,8 +30,5 @@ export class ApiService {
       this.movie = data;
   }
 
-  getMovie(){
-    return this.movie;
-  }
 
 }

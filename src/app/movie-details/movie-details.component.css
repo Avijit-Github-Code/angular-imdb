@@ -1,0 +1,13 @@
+.cover {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.poster {
+  position: absolute;
+  left: 10px;
+  top: 400px;
+  z-index: -1;
+}

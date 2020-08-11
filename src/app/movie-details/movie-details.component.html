@@ -1,6 +1,10 @@
-<h2>Movie Details</h2>
-<p>Description : {{this.apiService.movie.overview}}</p>
-<p>Language : {{this.apiService.movie.original_language}}</p>
-<p>Popularity : {{this.apiService.movie.popularity}}</p>
-<p>Release Date : {{this.apiService.movie.release_date}}</p>
-<p>Revenue : {{this.apiService.movie.revenue}}</p>
+<h2>{{this.apiService.movie.title}}</h2>
+<div styles="margin:100px">
+<img src="https://image.tmdb.org/t/p/w500/{{this.apiService.movie.backdrop_path}}" width="500" height="400" class="cover">
+<img src="https://image.tmdb.org/t/p/w500/{{this.apiService.movie.poster_path}}" width="200" height="150" class="poster">
+</div>
+<p><b>Description :</b> {{this.apiService.movie.overview}}</p>
+<p><b>Language :</b> {{this.apiService.movie.original_language}}</p>
+<p><b>Popularity :</b> {{this.apiService.movie.popularity}}</p>
+<p><b>Release Date :</b> {{this.apiService.movie.release_date}}</p>
+<p><b>Revenue :</b> {{this.apiService.movie.revenue}}</p>

@@ -10,7 +10,7 @@
   <h3>{{genreName}}/Movies</h3>
   <div class="scroll">
     <div *ngFor="let movie of movies;index as movieId">
-      <h2><a (click)="getMovieDetails(movie.id)" [routerLink]="['/details',movieId]">{{movie.title}}</a></h2>
+      <h2><a (click)="getMovieDetails(movie.id)" [routerLink]="['/details',movie.id]">{{movie.title}}</a></h2>
     </div>
   <div>
 <div>
